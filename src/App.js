@@ -1,25 +1,46 @@
-import logo from './logo.svg';
-import './App.scss';
+import './App.css';
+import { useState } from 'react';
+//import ProgressBar  from './Pages/Home/ProgressBar/ProgressBar';
+import  TestComp  from './Components/testComp/TestComp.jsx';
+import NavBar from './NavBar';
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <NavBar />
     </div>
+
   );
 }
 
-export default App;
+
+/*
+------------------------------------------------------------
+DAY 1: Making a real-time progress bar
+------------------------------------------------------------
+export default function App() {
+
+
+  return (
+    <div className='main'>
+      <h1>hello this is the main page</h1>
+
+
+      <TestComp />
+      <ProgressBar />
+
+
+    </div>
+
+  );
+}
+
+
+
+
+
+<div className="App">
+        <h1>Hello World! first app </h1>
+      </div>
+
+*/
