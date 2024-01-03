@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'Kreon';
+    src: url('./Kreon/Kreon-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Kreon';
+    src: url('./Kreon/Kreon-Bold.ttf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+.nav {
+    background-color: #201c1c;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;  /* 1rem is unit for 1 font size */
+    padding: 0 1rem;
+}
+
+.nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.nav li {
+    display: inline-block;
+    margin-right: 1rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.nav a {
+    color: inherit;
+    font-family: Kreon;
+    text-decoration: none;
+}
+
+.nav li.active{
+    background-color: grey;
+}
+
+
+.nav li:hover{
+    color: palegreen;
+}
